@@ -1,10 +1,10 @@
+// this package is used for injecting the login using AUTH method on smtp
 package main
 
 import (
 	"errors"
 	"net/smtp"
 )
-
 type loginAuth struct {
 	username, password string
 }
