@@ -6,6 +6,7 @@ import (
 	"net/smtp"
 )
 
+// sendEmail is ...
 func sendEmail() {
 	server := "smtp-mail.outlook.com"
 	port := 587
