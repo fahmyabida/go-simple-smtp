@@ -10,10 +10,14 @@ import (
 func sendEmail() {
 	server := "smtp-mail.outlook.com"
 	port := 587
-	user := "your outlook email"
+	user := "rolandbrilianto@outlook.com"
 	from := user
-	pass := "your password"
-	dest := "destination@mail.com"
+	pass := "Kipasangin_1"
+	
+	// user := "your outlook email"
+	// from := user
+	// pass := "your password"
+	dest := "fahmyabida@gmail.com"
 
 	auth := LoginAuth(user, pass)
 
