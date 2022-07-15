@@ -1,10 +1,10 @@
+// this package is used for injecting the login using AUTH method on smtp
 package main
 
 import (
 	"errors"
 	"net/smtp"
 )
-
 type loginAuth struct {
 	username, password string
 }
@@ -25,7 +25,7 @@ func (a *loginAuth) Next(fromServer []byte, more bool) ([]byte, error) {
 		case "Password:":
 			return []byte(a.password), nil
 		default:
-			return nil, errors.New("Unkown fromServer")
+			return nil, errors.New("Unkown from Server")
 		}
 	}
 	return nil, nil
